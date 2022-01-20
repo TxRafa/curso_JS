@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio das mensagens</title>
+<style>
+    body { 
+        font: 30px Arial;
+        background-color: rgba(160, 109, 85, 0.459);
+        
+    }
+    button{
+        background-color: azure;
+        font-size: 20px;
+        padding: 40px;
+        font-family: monospace;
+
+    }
+</style>
+
+</head>
+<body>
+    <h1>Antes e depois</h1>
+
+    <button onclick="antsuc()">Antecessor e Sucessor</button>
+    
+</body>
+<script>
+        function antsuc(){
+            const numero = window.prompt('Digite um numero inteiro qualquer')
+            window.alert(`Antes de ${numero} temos o numero ${numero - 1} e depois de ${numero} temos o numero ${numero + 1}`)
+        }
+
+</script>
+</html>

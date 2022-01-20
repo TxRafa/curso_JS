@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País de Origem</title>
+    <style>body {
+        background: rgba(0, 119, 255, 0.384);
+        color: rgb(63, 63, 63);
+        font: normal 14pt Arial;
+    }
+        input {
+            font: normal 12pt arial;
+            width: 120px;
+        }
+        div#res {
+            margin-top: 30px;
+
+    }
+
+    </style>
+</head>
+<body>
+    <body>
+        <h1> Nacionalidade</h1>
+        Informe seu país: <input type="text" name="txtNacionalidade" id = "txtNacionalidade" >
+        <input type="button" value="Verificar" onclick="verificarNacionalidade()">
+        <div id="res"> 
+    
+        </div>
+    
+        <script>
+            function verificarNacionalidade() {
+                var nacionalidade = document.querySelector('input#txtNacionalidade').value
+                var res = document.getElementById('res')
+                if (nacionalidade != 'Brasil') {
+                    res.innerHTML = `Você <strong> NÃO </strong> é brasileiro ` 
+                } else {
+                    res.innerHTML = `Você é<strong> Brasileiro! </strong> `
+                }
+    
+            }
+        </script>
+    </body>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio das mensagens</title>
+<style>
+    body { 
+        font: 30px Arial;
+        background-color: rgba(141, 240, 27, 0.411);
+        
+    }
+    button{
+        background-color: azure;
+        font-size: 20px;
+        padding: 40px;
+        font-family: monospace;
+
+    }
+</style>
+
+</head>
+<body>
+    <h1>Calculando troco</h1>
+
+    <button onclick="troco()">Comprar produto</button>
+    
+</body>
+<script>
+        function troco(){
+            const produto = window.prompt('Qual produto voce comprou?')
+            const valor = window.prompt(`Quanto custa o ${produto} que voce esta comprando?`)
+            const troco = window.prompt(`Qual foi o valor que voce deu para pagar o ${produto} ?`)            
+            
+            
+            window.alert(`Voce comprou ${produto} que custou R$ ${valor}. Deu R$ ${troco} em dinheiro e vai receber R$ ${troco - valor} de troco. Volte sempre`)
+        }
+        
+</script>
+</html>
